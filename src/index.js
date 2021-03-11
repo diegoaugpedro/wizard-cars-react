@@ -1,17 +1,31 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from 'react'
+import ReactDOM from 'react-dom'
+
+import Model from './components/Model'
+import Version from './components/Version'
+import Color from './components/Color'
+import Optional from './components/Optional'
+
+import './index.css'
+
+<h1>Wizard de Carros</h1>
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+    <h2><Model /></h2>,
+    document.getElementById('root')
+)
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+ReactDOM.render(
+    <h2><Version /></h2>,
+    document.getElementById('root')
+)
+
+ReactDOM.render(
+    <h2><Color /></h2>,
+    document.getElementById('root')
+)
+
+ReactDOM.render(
+    <h2><Optional /></h2>,
+    document.getElementById('root')
+)
